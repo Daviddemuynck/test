@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Vragenlijst</title>
+</head>
+<!--Welke vragen in welke vorm moeten hierin: 
+1. algemeen raportcijfer de dag
+2. Heb je goed geslapen?
+3. Heb je gesport?-->
+
+
+<body>
+    <h1> De vragenlijst</h1>
+        <p> Vul deze vragenlijst zo eerlijk mogelijk in. Om een goed beeld te ontwikkelen van je mentale staat, raden we aan om dagelijks deze vragenlijst in te vullen.  </p>    
+
+    <form method="POST" action="test">
+        <!--Welke activiteiten heb je vandaag ondernomen?-->
+        <fieldset>      
+            <legend>Activiteiten</legend>  
+            <label> Welke activiteiten heb je vandaag ondernomen?</label><br>    
+            <input type="checkbox" name="activiteiten" value="werk" id="werk">     
+            <label for="werk">Werk</label><br>
+
+            <input type="checkbox" name="activiteiten" value="sport" id="sport">
+            <label for="sport"> Sport</label><br>      
+            <input type="checkbox" name="activiteiten" value="sociaal" id="sociaal">      
+            <label for="sociaal"> Sociale activiteiten</label>  <br>    
+            
+                
+        </fieldset>  
+        <!--Hoe goed was je slaap?-->
+        <fieldset>
+            <legend> Slaap</legend>
+                <label for="lengteslaap"> Hoe lang heb je geslapen in hele uren?</label><br>
+                <input type="number" id="lengteslaap" name="lengteslaap" min="0" max="24"> <br> <br>
+                
+                <label for="rapportcijferslaap"> Hoe lekker heb je geslapen?</label> <br>
+                1<input type="range" id="rapportcijferslaap" name="rapportcijferslaap" min="1" max="10" required > 10
+        </fieldset>
+        <!-- Algemeen raportcijfer-->
+        <fieldset>
+            <legend>Welk rapportcijfer geef je deze dag? </legend>
+            
+               1<input type="range" id="rapportcijferdag" name="rapportcijferdag" min="1" max="10" required > 10
+            
+        </fieldset>
+        <input type="submit" value="Submit now" />  
+
+        
+    </form>
+   
+</body>
+
+
+
+
+</html>
+
+
+
